@@ -8,7 +8,8 @@ function App() {
   const [message, setMessage] = useState('');
 
   // Logic
-  const Clcbmi = () => {
+  const Clcbmi = (e) => {
+    e.preventDefault();
     if (height === 0 || weight === 0) {
       alert("Please enter valid height and weight.");
     } else {
